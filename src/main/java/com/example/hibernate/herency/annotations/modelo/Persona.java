@@ -14,6 +14,8 @@ import javax.persistence.InheritanceType;
 
 @Entity
 @Inheritance(strategy=InheritanceType.SINGLE_TABLE) //INDICA QUE LA CLASE Y SUBCLASES ESTARÁN EN LA MISMA TABLA.
+//@Inheritance(strategy=InheritanceType.JOINED) //Cada subclase en su propia tabla.
+//@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS) //Cada subclase en su propia tabla, sin tabla para clase abstracta.
 @DiscriminatorColumn(name="DIS", discriminatorType=DiscriminatorType.STRING)
 public abstract class Persona implements Serializable
 {
@@ -24,6 +26,7 @@ public abstract class Persona implements Serializable
 	
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
+    //@GeneratedValue(strategy=GenerationType.TABLE) // Usado con InheritanceType.TABLE_PER_CLASS
 	private long id;
     
     private String nombre;
