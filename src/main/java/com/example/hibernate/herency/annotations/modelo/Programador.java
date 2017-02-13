@@ -1,5 +1,10 @@
 package com.example.hibernate.herency.annotations.modelo;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue(value="PG")
 public class Programador extends Tecnologo
 {
     /**

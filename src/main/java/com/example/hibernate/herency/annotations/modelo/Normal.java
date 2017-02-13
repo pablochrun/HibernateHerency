@@ -1,5 +1,10 @@
 package com.example.hibernate.herency.annotations.modelo;
 
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+@Entity
+@DiscriminatorValue(value="NM")
 public class Normal extends Persona
 {
     /**
