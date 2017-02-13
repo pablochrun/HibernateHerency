@@ -21,6 +21,12 @@
       <property name="hbm2ddl.auto">create-drop</property>
 
       <!-- Aqui iran las clases mapeadas -->
+      	<!-- Mapeo XML -->
+		<mapping resource="hibernate/herencia/mapeos/Persona.hbm.xml" />
+		<mapping resource="hibernate/herencia/mapeos/Normal.hbm.xml" />
+		<mapping resource="hibernate/herencia/mapeos/Tecnologo.hbm.xml" />
+		<mapping resource="hibernate/herencia/mapeos/Programador.hbm.xml" />
+		<mapping resource="hibernate/herencia/mapeos/Tester.hbm.xml" />
 
         
    </session-factory>

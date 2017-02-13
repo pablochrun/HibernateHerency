@@ -1,0 +1,11 @@
+com\example\hibernate\herency\annotations\modelo\Persona.class
+com\example\hibernate\herency\annotations\dao\AbstractDAO$3.class
+com\example\hibernate\herency\annotations\modelo\Programador.class
+com\example\hibernate\herency\annotations\utils\HibernateUtil.class
+com\example\hibernate\herency\annotations\dao\AbstractDAO$2.class
+com\example\hibernate\herency\annotations\dao\AbstractDAO.class
+com\example\hibernate\herency\annotations\modelo\Normal.class
+com\example\hibernate\herency\annotations\modelo\Tecnologo.class
+com\example\hibernate\herency\annotations\dao\AbstractDAO$1.class
+com\example\hibernate\herency\annotations\modelo\Tester.class
+com\example\hibernate\herency\annotations\App.class

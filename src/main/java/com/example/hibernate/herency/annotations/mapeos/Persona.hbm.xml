@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="hibernate.herencia.modelo.Persona" table="personas">
+        <id name="id">
+            <generator class="identity" />
+        </id>
+    
+        <discriminator column="DISC" type="string" />
+    
+        <property name="nombre" />
+        <property name="edad" />
+
+		<!-- Para mapear toda la estructura en un solo fichero -->
+		<!--  
+		<subclass name="hibernate.herencia.modelo.Normal" discriminator-value="nrm">
+            <property name="ocupacion" />
+        </subclass>
+
+        <subclass name="hibernate.herencia.modelo.Tecnologo" discriminator-value="tec">
+            <property name="aniosDeEstudios" />
+        </subclass>
+
+		< !-- Estas dos clases deberían extender de Tecnologo -- >
+        <subclass name="hibernate.herencia.modelo.Programador" discriminator-value="pro">
+            <property name="lenguajeFavorito" />
+            <property name="aniosDeExperiencia" />
+        </subclass>
+
+        <subclass name="hibernate.herencia.modelo.Tester" discriminator-value="tes">
+            <property name="herramientaDeTesteo" />
+        </subclass>
+		-->
+
+    </class>
+</hibernate-mapping>
